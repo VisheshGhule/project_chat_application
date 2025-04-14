@@ -14,7 +14,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 sync build/ s3://my-react-chat-app --delete
+      - aws s3 sync build/ s3://my-react-app-chat --delete
 
 artifacts:
   files:
