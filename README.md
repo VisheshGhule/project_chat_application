@@ -36,14 +36,21 @@ I’ve documented everything in detail in my Hashnode blog, including all errors
 ---
 
 
----
 
 ## ⚙️ Setup Instructions
-
-> ⚠️ Make sure you're inside the `client/` folder before running these commands.
 
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/project-chat-application.git
+git clone https://github.com/VisheshGhule/project_chat_application.git
 cd project-chat-application/client
+```
+
+### 2. Install dependencies and build
+
+> ⚠️ Make sure you're inside the `client/` folder before running these commands.
+
+ ```bash
+npm install
+npm run build
+```
