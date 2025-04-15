@@ -1,20 +1,31 @@
-# Realtime Chat Application
+# 🌐 Static React Website Deployment on AWS
 
-### [Live Site](https://realtime-chat-application.netlify.com)
+### [📘 Full Blog Walkthrough](https://visheshblog.hashnode.dev/project-1-deploying-a-static-react-website-on-aws-with-cicd-s3-cloudfront-codepipeline)
 
-### [🌟 Become a top 1% Next.js developer in only one course](https://jsmastery.pro/next15)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
+### [🚀 Hosted with AWS S3 + CloudFront + CI/CD using CodePipeline]
+### [📦 Tech: React | AWS S3 | CloudFront | CodeBuild | GitHub]
 
-![Chat Application](https://i.ytimg.com/vi/ZwFA3YMfkoc/maxresdefault.jpg)
+![React AWS Deployment](https://i.ytimg.com/vi/ZwFA3YMfkoc/maxresdefault.jpg)
 
 ## Introduction
-This is a code repository for the corresponding video tutorial. 
+This is a code repository for the corresponding deployment project walkthrough.  
 
-In this video, we will create a full Realtime Chat Application. We're going to use  React on the front end, with NodeJS + Socket.io web socket library on the back end. 
+In this project, I deployed a static React website to AWS using services like S3 (for static hosting), CloudFront (for CDN and HTTPS), and CodePipeline (for continuous integration and deployment).  
 
-By the end of this video, you will have a strong understanding of how to send and receive messages using web sockets and Socket.io to make any real-time application.
+If you're looking to automate your frontend deployments and host React apps the right way on AWS, this will help you get started — even as a beginner.
 
-## Launch your development career with project-based coaching - https://www.jsmastery.pro
+---
 
-Setup:
-- run ```npm i && npm start``` for both client and server side to start the development server
+## Launch your cloud learning journey with project-based practice and real AWS deployment experience! 🔥
+
+---
+
+## Setup
+
+- Run the following commands inside the `client/` folder:
+
+```bash
+git clone https://github.com/yourusername/project-chat-application.git
+cd project-chat-application/client
+npm install
+npm run build
