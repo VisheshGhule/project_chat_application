@@ -117,7 +117,8 @@ artifacts:
 ### CI/CD Architecture
 
 GitHub → CodePipeline → CodeBuild → S3 → CloudFront (with HTTPS)
-![Architecture Diagram](Screenshot-from-2025-04-15-16-23-07.png)
+
+![CI/CD Architecture](https://cdn.hashnode.com/res/hashnode/image/upload/v1744715062055/69038515-e215-4c40-aa65-8dd247718022.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp)
 
 ---
 
