@@ -1,10 +1,5 @@
 # 📦 React Static Website Deployment on AWS with CI/CD
 
-### 🔴 [Live Blog Walkthrough](https://visheshblog.hashnode.dev/project-1-deploying-a-static-react-website-on-aws-with-cicd-s3-cloudfront-codepipeline)
-
-### 🚀 Hosted With: AWS S3 + CloudFront + CodePipeline  
-### 🧠 Project Type: Static React Website with CI/CD from GitHub
-
 ---
 
 ## 🧠 Introduction
@@ -54,3 +49,38 @@ cd project-chat-application/client
 npm install
 npm run build
 ```
+
+### 3. Created an S3 bucket on AWS
+
+- Enabled static website hosting
+- Set index.html as the default
+- Added a bucket policy to allow public read access
+
+### 4. Uploaded the React build to S3 manually
+
+- Used the /client/build folder contents (Upload build folder content not whole build folder)
+
+### 5. Set up CloudFront
+
+- Origin: S3 website endpoint
+- Added default root object index.html
+- Added HTTPS using AWS ACM
+- (Optional) Linked Route 53 for a custom domain
+
+### 6. Added a buildspec.yml file at the root of the repo
+
+### 7. Set up CodePipeline
+
+- Source: GitHub
+- Build: CodeBuild using buildspec.yml
+- Deploy: S3 bucket created in step 3
+
+### 8. Tested the pipeline
+
+- Pushed code to GitHub
+- CodePipeline triggered automatically
+- Site deployed to S3 and served via CloudFront 🚀
+
+### CI/CD Architecture
+
+GitHub → CodePipeline → CodeBuild → S3 → CloudFront (with HTTPS)
