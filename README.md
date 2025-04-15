@@ -35,3 +35,15 @@ I’ve documented everything in detail in my Hashnode blog, including all errors
 
 ---
 
+
+---
+
+## ⚙️ Setup Instructions
+
+> ⚠️ Make sure you're inside the `client/` folder before running these commands.
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/yourusername/project-chat-application.git
+cd project-chat-application/client
