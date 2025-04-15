@@ -1,6 +1,5 @@
 # 📦 React Static Website Deployment on AWS with CI/CD
 
----
 
 ## 🧠 Introduction
 
