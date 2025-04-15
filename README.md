@@ -50,21 +50,58 @@ npm run build
 ### 3. Created an S3 bucket on AWS
 
 - Enabled static website hosting
-- Set index.html as the default
-- Added a bucket policy to allow public read access
+- Set `index.html` as the default
+- Add a bucket policy to allow public read access
+  ```json
+  {
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::my-react-app-chat/*"
+    }
+  ]
+}```
+
 
 ### 4. Uploaded the React build to S3 manually
 
-- Used the /client/build folder contents (Upload build folder content not whole build folder)
+- Used the `/client/build` folder contents (Upload build folder content not whole build folder)
 
 ### 5. Set up CloudFront
 
 - Origin: S3 website endpoint
-- Added default root object index.html
-- Added HTTPS using AWS ACM
+- Add default root object index.html
+- Add HTTPS using AWS ACM
 - (Optional) Linked Route 53 for a custom domain
 
-### 6. Added a buildspec.yml file at the root of the repo
+### 6. Add a `buildspec.yml` file at the root of the repo (Already added no need to add, add when there is no builspec.yml file added)
+```yml
+version: 0.2
+
+env:
+  variables:
+    NODE_OPTIONS: --openssl-legacy-provider
+
+phases:
+  install:
+    commands:
+      - cd client
+      - npm install
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - aws s3 sync build/ s3://my-react-app-chat --delete
+
+artifacts:
+  files:
+    - '**/*'
+```
 
 ### 7. Set up CodePipeline
 
@@ -72,11 +109,12 @@ npm run build
 - Build: CodeBuild using buildspec.yml
 - Deploy: S3 bucket created in step 3
 
-### 8. Tested the pipeline
+### 8. Test the pipeline
 
 - Pushed code to GitHub
 - CodePipeline triggered automatically
-- Site deployed to S3 and served via CloudFront 🚀
+- Site deployed to S3 and served via CloudFront 
+- Open the CloudFront domain or your custom domain 🚀
 
 ### CI/CD Architecture
 
