@@ -71,11 +71,10 @@ npm run build
 
 - Used the `/client/build` folder contents (Upload build folder content not whole build folder)
 
-### 5. Set up CloudFront
+### 5. Set up CloudFront (Create Distribution)
 
 - Origin: S3 website endpoint
 - Add default root object index.html
-- Add HTTPS using AWS ACM
 - (Optional) Linked Route 53 for a custom domain
 
 ### 6. Add a `buildspec.yml` file at the root of the repo (Already added no need to add, add when there is no builspec.yml file added)
