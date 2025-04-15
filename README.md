@@ -25,9 +25,6 @@ I’ve documented everything in detail in my Hashnode blog, including all errors
 **Deployment**:  
 - AWS S3 (for static hosting)  
 - AWS CloudFront (as global CDN)  
-- AWS Certificate Manager (for HTTPS)  
-- (Optional) Route 53 or custom DNS
-
 ---
 
 
