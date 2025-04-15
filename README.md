@@ -48,7 +48,7 @@ npm run build
 
 ### 3. Created an S3 bucket on AWS
 
-- Enabled static website hosting
+- Enable static website hosting
 - Set `index.html` as the default
 - Add a bucket policy to allow public read access
   ```json
@@ -117,3 +117,14 @@ artifacts:
 ### CI/CD Architecture
 
 GitHub → CodePipeline → CodeBuild → S3 → CloudFront (with HTTPS)
+![Architecture Diagram] Screenshot from 2025-04-15 16-23-07.png
+
+---
+
+### InShort 
+
+1. Clone repo → cd project_chat_application → cd client → npm install → npm run build
+2. Setup s3 bucket → enable static website hosting → add bucket policy → upload build content → `project_chat_app/client/build` → (upload build folder content not whole build folder)
+3. Create CloudFront Distribution →
+4. CI/CD with Codepipeline + Codebuild → Create Pipeline → & add Build Stage
+5. Test it: Open the CloudFront domain or your custom domain.
