@@ -64,7 +64,8 @@ npm run build
       "Resource": "arn:aws:s3:::my-react-app-chat/*"
     }
   ]
-}```
+  }``
+
 
 
 ### 4. Uploaded the React build to S3 manually
