@@ -5,8 +5,6 @@
 ### [🚀 Hosted with AWS S3 + CloudFront + CI/CD using CodePipeline]
 ### [📦 Tech: React | AWS S3 | CloudFront | CodeBuild | GitHub]
 
-![React AWS Deployment](https://i.ytimg.com/vi/ZwFA3YMfkoc/maxresdefault.jpg)
-
 ## Introduction
 This is a code repository for the corresponding deployment project walkthrough.  
 
