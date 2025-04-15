@@ -1,29 +1,39 @@
-# 🌐 Static React Website Deployment on AWS
+# 📦 React Static Website Deployment on AWS with CI/CD
 
-### [📘 Full Blog Walkthrough](https://visheshblog.hashnode.dev/project-1-deploying-a-static-react-website-on-aws-with-cicd-s3-cloudfront-codepipeline)
+### 🔴 [Live Blog Walkthrough](https://visheshblog.hashnode.dev/project-1-deploying-a-static-react-website-on-aws-with-cicd-s3-cloudfront-codepipeline)
 
-### [🚀 Hosted with AWS S3 + CloudFront + CI/CD using CodePipeline]
-### [📦 Tech: React | AWS S3 | CloudFront | CodeBuild | GitHub]
+### 🚀 Hosted With: AWS S3 + CloudFront + CodePipeline  
+### 🧠 Project Type: Static React Website with CI/CD from GitHub
 
-## Introduction
-This is a code repository for the corresponding deployment project walkthrough.  
-
-In this project, I deployed a static React website to AWS using services like S3 (for static hosting), CloudFront (for CDN and HTTPS), and CodePipeline (for continuous integration and deployment).  
-
-If you're looking to automate your frontend deployments and host React apps the right way on AWS, this will help you get started — even as a beginner.
+![React AWS Deployment](https://i.ytimg.com/vi/ZwFA3YMfkoc/maxresdefault.jpg)
 
 ---
 
-## Launch your cloud learning journey with project-based practice and real AWS deployment experience! 🔥
+## 🧠 Introduction
+
+This is the complete code repository for my project where I hosted a **React application** on **AWS** with a fully automated deployment pipeline using **CodePipeline**, **CodeBuild**, and **S3**, served globally via **CloudFront** with HTTPS enabled.
+
+I’ve documented everything in detail in my Hashnode blog, including all errors and learnings — perfect for beginners exploring AWS and CI/CD for the first time.
+
+🔗 [Read the full guide](https://visheshblog.hashnode.dev/project-1-deploying-a-static-react-website-on-aws-with-cicd-s3-cloudfront-codepipeline)
 
 ---
 
-## Setup
+## 🛠️ Tech Stack
 
-- Run the following commands inside the `client/` folder:
+**Frontend**:  
+- React.js
 
-```bash
-git clone https://github.com/yourusername/project-chat-application.git
-cd project-chat-application/client
-npm install
-npm run build
+**CI/CD**:  
+- AWS CodePipeline  
+- AWS CodeBuild  
+- GitHub (as source provider)
+
+**Deployment**:  
+- AWS S3 (for static hosting)  
+- AWS CloudFront (as global CDN)  
+- AWS Certificate Manager (for HTTPS)  
+- (Optional) Route 53 or custom DNS
+
+---
+
