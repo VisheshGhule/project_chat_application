@@ -5,8 +5,6 @@
 ### 🚀 Hosted With: AWS S3 + CloudFront + CodePipeline  
 ### 🧠 Project Type: Static React Website with CI/CD from GitHub
 
-![React AWS Deployment](https://i.ytimg.com/vi/ZwFA3YMfkoc/maxresdefault.jpg)
-
 ---
 
 ## 🧠 Introduction
