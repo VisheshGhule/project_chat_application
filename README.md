@@ -64,7 +64,7 @@ npm run build
       "Resource": "arn:aws:s3:::my-react-app-chat/*"
     }
   ]
-  }``
+  }```
 
 
 
